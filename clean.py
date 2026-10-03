@@ -45,3 +45,12 @@ plt.title("Count of Movies per Genre")
 plt.xlabel("Genre")
 plt.ylabel("Count")
 #plt.show()
+
+# average rating by genre 
+avg_rating_by_genre = df.groupby("genre")["imdb_rating"].mean().sort_values(ascending = False)
+plt.figure(figsize=(13, 6))
+sns.barplot(x=avg_rating_by_genre.index, y=avg_rating_by_genre.values)
+plt.title("average rating by genre")
+plt.xlabel("genre")
+plt.ylabel("average rating")
+# plt.show()
