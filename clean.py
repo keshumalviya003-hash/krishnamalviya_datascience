@@ -20,6 +20,13 @@ df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
 df = df.drop_duplicates()
 #print("Duplicate rows after:", df.duplicated().sum())
 
+# movies released before the year 2000
+movies_before_2000 = df[df["release_year"] < 2000][["movie_title", "release_year", "genre", "director", "imdb_rating", "runtime_min"]]
+print("Movies released before the year 2000:")
+print(movies_before_2000)
+
+
+
 
 
 
