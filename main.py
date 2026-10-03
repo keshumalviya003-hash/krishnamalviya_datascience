@@ -4,9 +4,11 @@ import seaborn as sns
 df =pd.read_csv("movie dataset.csv")
 
 # check missing values
-#print(df.isnull().sum())
+# cheking missing values using isnull() and sum() functions
+print(df.isnull().sum())
 
-#handle missing values 
+#handle missing values
+#manage missing values by filling genre and director with "Unknown" and filling IMDb_Rating and Runtime_Min with median values
 df["Genre"] = df["Genre"].fillna("Unknown")
 df["Director"] = df["Director"].fillna("Unknown")
 df["IMDb_Rating"] = df["IMDb_Rating"].fillna(df["IMDb_Rating"].median())
