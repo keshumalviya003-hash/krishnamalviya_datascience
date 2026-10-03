@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Dataset | Data Cleaning & Analysis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111827, #374151);
+            color: white;
+            padding: 70px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(32px, 6vw, 58px);
+            margin-bottom: 12px;
+        }
+
+        header p {
+            max-width: 760px;
+            margin: auto;
+            color: #d1d5db;
+            font-size: 18px;
+        }
+
+        .container {
+            width: min(1100px, 92%);
+            margin: auto;
+        }
+
+        .section {
+            padding: 55px 0;
+        }
+
+        .section h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 30px;
+            color: #6b7280;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            border: 1px solid #e5e7eb;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #6b7280;
+        }
+
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+        }
+
+        .step {
+            background: white;
+            padding: 22px;
+            border-radius: 14px;
+            border-left: 5px solid #6366f1;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+        }
+
+        .step span {
+            display: inline-block;
+            font-weight: bold;
+            color: #6366f1;
+            margin-bottom: 8px;
+        }
+
+        .features {
+            background: white;
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 550px;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background: #f3f4f6;
+        }
+
+        .links {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            margin: 7px;
+            padding: 12px 22px;
+            border-radius: 10px;
+            background: #111827;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 28px 15px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4338ca;
+            padding: 7px 12px;
+            border-radius: 999px;
+            margin: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>🎬 Movie Dataset</h1>
+        <p>
+            Data Cleaning, Analysis & Visualization using Python, Pandas,
+            Matplotlib and Seaborn.
+        </p>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <h2>📌 Project Overview</h2>
+        <p class="section-intro">
+            This project focuses on cleaning and analyzing a movie dataset.
+            The goal is to prepare reliable data and perform basic exploratory
+            analysis using Python.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🐍 Python</h3>
+                <p>Used for data processing and analysis.</p>
+            </div>
+
+            <div class="card">
+                <h3>🐼 Pandas</h3>
+                <p>Used for loading, cleaning and transforming the dataset.</p>
+            </div>
+
+            <div class="card">
+                <h3>📊 Matplotlib</h3>
+                <p>Used to create data visualizations.</p>
+            </div>
+
+            <div class="card">
+                <h3>📈 Seaborn</h3>
+                <p>Used for clear and attractive statistical charts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>🧹 Data Cleaning</h2>
+        <p class="section-intro">
+            The dataset was prepared before analysis by performing the following
+            cleaning operations.
+        </p>
+
+        <div class="steps">
+            <div class="step">
+                <span>01</span>
+                <h3>Missing Values</h3>
+                <p>Missing values were identified and handled using suitable methods such as median values and "Unknown".</p>
+            </div>
+
+            <div class="step">
+                <span>02</span>
+                <h3>Duplicate Records</h3>
+                <p>Duplicate rows were identified and removed from the dataset.</p>
+            </div>
+
+            <div class="step">
+                <span>03</span>
+                <h3>Column Names</h3>
+                <p>Column names were standardized to make them easier to use in Python.</p>
+            </div>
+
+            <div class="step">
+                <span>04</span>
+                <h3>Filtering</h3>
+                <p>Movies released before the year 2000 were filtered for analysis.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>🎞️ Dataset Features</h2>
+        <p class="section-intro">
+            The project works with movie-related information including:
+        </p>
+
+        <div class="features">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Movie Title</td>
+                        <td>Name of the movie</td>
+                    </tr>
+                    <tr>
+                        <td>Genre</td>
+                        <td>Category or genre of the movie</td>
+                    </tr>
+                    <tr>
+                        <td>Release Year</td>
+                        <td>Year in which the movie was released</td>
+                    </tr>
+                    <tr>
+                        <td>Runtime</td>
+                        <td>Duration of the movie in minutes</td>
+                    </tr>
+                    <tr>
+                        <td>IMDb Rating</td>
+                        <td>IMDb rating of the movie</td>
+                    </tr>
+                    <tr>
+                        <td>Director</td>
+                        <td>Director of the movie</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>📊 Analysis Performed</h2>
+        <p class="section-intro">
+            The project includes the following analysis and visualizations:
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🎭 Movies per Genre</h3>
+                <p>
+                    A bar chart was created to show the number of movies
+                    belonging to each genre.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>⭐ Average IMDb Rating</h3>
+                <p>
+                    Average IMDb ratings were calculated and compared across
+                    different genres.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📅 Before 2000</h3>
+                <p>
+                    Movies released before the year 2000 were filtered into a
+                    separate dataset for analysis.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🏆 Top Rated Movies</h3>
+                <p>
+                    The project also identifies movies with the highest IMDb
+                    ratings.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>🛠️ Technologies</h2>
+        <div style="text-align:center;">
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Jupyter Notebook</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Netlify</span>
+        </div>
+
+        <div class="links">
+            <!-- Replace these # links with your actual URLs after deployment -->
+            <a class="btn" href="#" target="_blank">📓 View Notebook</a>
+            <a class="btn" href="#" target="_blank">💻 GitHub Repository</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2>✅ Conclusion</h2>
+        <p class="section-intro">
+            The movie dataset was cleaned by handling missing values, removing
+            duplicate records and standardizing column names. The cleaned data
+            was then used for filtering and visualization. The project provides
+            a foundation for further exploratory data analysis and statistical
+            analysis of movie data.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Movie Dataset – Data Cleaning & Analysis</strong></p>
+    <p>Created by Krishna Malviya | Data Analysis Project</p>
+</footer>
+
+</body>
+</html>
