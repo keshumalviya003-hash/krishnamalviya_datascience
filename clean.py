@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 df =pd.read_csv("movie dataset.csv")
 
 # check missing values
@@ -30,5 +32,16 @@ avg_ratings_per_genre = df.groupby("genre")["imdb_rating"].mean()
 #print("Average ratings per genre:")
 #print(avg_ratings_per_genre)
 
+# the top 5 highest-rated movies
+top_5_highest_rated_movies = df.nlargest(5, "imdb_rating")[["movie_title", "imdb_rating"]]
+#print("Top 5 highest-rated movies:")
+#print(top_5_highest_rated_movies)
 
-
+#Create a bar chart showing the count of movies per genre
+genre_counts = df["genre"].value_counts()
+plt.figure(figsize=(13, 6))
+sns.barplot(x=genre_counts.index, y=genre_counts.values)
+plt.title("Count of Movies per Genre")
+plt.xlabel("Genre")
+plt.ylabel("Count")
+#plt.show()
