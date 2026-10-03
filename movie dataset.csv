@@ -1,0 +1,121 @@
+Movie_ID,Movie_Title,Genre,Release_Year,IMDb_Rating,Runtime_Min,Director
+1001,The Shawshank Redemption,Drama,1994,9.3,142.0,Frank Darabont
+1002,The Godfather,Crime,1972,9.2,175.0,Francis Ford Coppola
+1003,The Dark Knight, action ,2008,9.0,152.0,Christopher Nolan
+1004,The Godfather Part II,Crime,1974,9.0,202.0,Francis Ford Coppola
+1005,12 Angry Men,Drama,1957,9.0,96.0,Sidney Lumet
+1006,Schindler's List,Drama,1993,9.0,195.0,Steven Spielberg
+1007,The Lord of the Rings: The Return of the King,Fantasy,2003,9.0,201.0,Peter Jackson
+1008,Pulp Fiction,Crime,1994,8.9,154.0, Quentin Tarantino 
+1009,"The Good, the Bad and the Ugly",Western,1966,8.8,178.0,Sergio Leone
+1010,Fight Club,Drama,1999,8.8,139.0,David Fincher
+1011,Forrest Gump,Drama,1994,8.8,142.0,Robert Zemeckis
+1012,Inception,Sci-Fi,2010,8.8,,Christopher Nolan
+1013,The Matrix,sci-fi,1999,8.7,136.0,Lana Wachowski
+1014,Goodfellas,Crime,1990,8.7,145.0,Martin Scorsese
+1015,One Flew Over the Cuckoo's Nest,Drama,1975,8.7,133.0,Milos Forman
+1016,Interstellar,Sci-Fi,2014,8.7,169.0,Christopher Nolan
+1017,Seven Samurai,Action,1954,,207.0,Akira Kurosawa
+1018,Saving Private Ryan,War,1998,8.6,169.0,Steven Spielberg
+1019,The Green Mile,Drama,1999,8.6,189.0,Frank Darabont
+1020,City of God,Crime,2002,8.6,130.0,Fernando Meirelles
+1021,Terminator 2: Judgment Day,Action,1991,8.6,137.0,James Cameron
+1022,Back to the Future,Comedy,1985,8.5,116.0,Robert Zemeckis
+1023,The Pianist,Drama,2002,8.5,150.0,Roman Polanski
+1024,Gladiator,,2000,8.5,155.0,Ridley Scott
+1025,The Departed,Crime,2006,8.5,151.0,Martin Scorsese
+1026,The Prestige,Mystery,2006,8.5,130.0,Christopher Nolan
+1027,American History X,Drama,1998,8.5,119.0,Tony Kaye
+1028,Léon: The Professional,Action,1994,8.5,110.0,
+1029,Parasite,Thriller,2019,8.5,132.0,Bong Joon Ho
+1030,The Usual Suspects,Mystery,1995,8.5,106.0,Bryan Singer
+1031,Psycho,Horror,1960,,109.0,Alfred Hitchcock
+1032,The Lion King,Animation,1994,8.5,88.0,Roger Allers
+1033,Modern Times,Comedy,1936,8.5,87.0,Charlie Chaplin
+1034,Hara-Kiri,Drama,1962,8.6,133.0,Masaki Kobayashi
+1035,The Silence of the Lambs,Thriller,1991,8.6,118.0,Jonathan Demme
+1036,Raiders of the Lost Ark,Adventure,1981,8.4,115.0,Steven Spielberg
+1037,The Great Dictator,Comedy,1940,8.4,125.0,Charlie Chaplin
+1038,Aliens,Sci-Fi,1986,8.4,137.0,James Cameron
+1039,The Dark Knight Rises,Action,2012,8.4,,Christopher Nolan
+1040,Django Unchained,Western,2012,8.4,165.0,Quentin Tarantino
+1041,WALL-E,Animation,2008,8.4,98.0,Andrew Stanton
+1042,Memento,Mystery,2000,8.4,113.0,Christopher Nolan
+1043,Apocalypse Now,War,1979,8.4,147.0,Francis Ford Coppola
+1044,The Lives of Others,Drama,2006,8.4,137.0,Florian Henckel von Donnersmarck
+1045,Sunset Boulevard,,1950,8.4,110.0,Billy Wilder
+1046,The Shining,Horror,1980,8.4,146.0,Stanley Kubrick
+1047,Alien,Horror,1979,8.5,117.0,Ridley Scott
+1048,The Great Escape,War,1963,8.2,172.0,John Sturges
+1049,A Beautiful Mind,Drama,2001,8.2,135.0,Ron Howard
+1050,Toy Story,Animation,1995,8.3,81.0,John Lasseter
+1051,Braveheart,War,1995,8.3,178.0,Mel Gibson
+1052,Amélie,Romance,2001,,122.0,Jean-Pierre Jeunet
+1053,The Intouchables,Comedy,2011,8.5,112.0,Olivier Nakache
+1054,Whiplash,Drama,2014,8.5,106.0,Damien Chazelle
+1055,The Grand Budapest Hotel,Comedy,2014,8.1,99.0,Wes Anderson
+1056,The Wolf of Wall Street,Crime,2013,8.2,180.0,Martin Scorsese
+1057,Joker,Thriller,2019,8.4,122.0,
+1058,Avengers: Endgame,Action,2019,8.4,181.0,Anthony Russo
+1059,Spider-Man: Into the Spider-Verse,Animation,2018,8.4,117.0,Bob Persichetti
+1060,Coco,Animation,2017,8.4,105.0,Lee Unkrich
+1061,Your Name,Romance,2016,8.4,,Makoto Shinkai
+1062,The Social Network,Drama,2010,7.8,120.0,David Fincher
+1063,Mad Max: Fury Road,Action,2015,8.1,120.0,George Miller
+1064,The Truman Show,Comedy,1998,8.2,103.0,Peter Weir
+1065,Eternal Sunshine of the Spotless Mind,Romance,2004,8.3,108.0,Michel Gondry
+1066,The Sixth Sense,Mystery,1999,8.2,107.0,M. Night Shyamalan
+1067,No Country for Old Men,Crime,2007,,122.0,Joel Coen
+1068,There Will Be Blood,Drama,2007,8.2,158.0,Paul Thomas Anderson
+1069,The Incredibles,Animation,2004,8.0,115.0,Brad Bird
+1070,Catch Me If You Can,Crime,2002,8.1,141.0,Steven Spielberg
+1071,The Green Book,Drama,2018,8.2,130.0,Peter Farrelly
+1072,1917,War,2019,8.2,119.0,Sam Mendes
+1073,Ford v Ferrari,,2019,8.1,152.0,James Mangold
+1074,The Imitation Game,Drama,2014,8.0,114.0,Morten Tyldum
+1075,La La Land,Romance,2016,8.0,128.0,Damien Chazelle
+1076,Get Out,Horror,2017,7.7,104.0,Jordan Peele
+1077,A Quiet Place,Horror,2018,7.5,90.0,John Krasinski
+1078,The Conjuring,Horror,2013,7.5,112.0,James Wan
+1079,Titanic,Romance,1997,7.9,194.0,
+1080,Jurassic Park,Adventure,1993,8.2,127.0,Steven Spielberg
+1081,The Terminator,Action,1984,8.1,107.0,James Cameron
+1082,Rocky,Sport,1976,8.1,119.0,John G. Avildsen
+1083,Raging Bull,Sport,1980,8.2,129.0,Martin Scorsese
+1084,Die Hard,Action,1988,8.2,,John McTiernan
+1085,The Sixth Sense,Mystery,1999,8.2,107.0,M. Night Shyamalan
+1086,The Exorcist,Horror,1973,8.1,122.0,William Friedkin
+1087,Heat,Crime,1995,8.3,170.0,Michael Mann
+1088,Casino,Crime,1995,,178.0,Martin Scorsese
+1089,Fargo,Crime,1996,8.1,98.0,Joel Coen
+1090,American Beauty,Drama,1999,8.3,122.0,Sam Mendes
+1091,The Big Lebowski,Comedy,1998,8.1,117.0,Joel Coen
+1092,Good Will Hunting,Drama,1997,8.3,126.0,Gus Van Sant
+1093,The Truman Show,Comedy,1998,8.2,103.0,Peter Weir
+1094,The Breakfast Club,Comedy,1985,7.8,97.0,John Hughes
+1095,Groundhog Day,Comedy,1993,8.0,101.0,Harold Ramis
+1096,The Princess Bride,,1987,8.0,98.0,Rob Reiner
+1097,Indiana Jones and the Last Crusade,Adventure,1989,8.2,127.0,Steven Spielberg
+1098,Stand by Me,Drama,1986,8.1,89.0,Rob Reiner
+1099,Dead Poets Society,Drama,1989,8.1,128.0,Peter Weir
+1100,The Sixth Sense Again,Mystery,2000,7.9,107.0,M. Night Shyamalan
+1101,The Martian,Sci-Fi,2015,,144.0,Ridley Scott
+1102,Arrival,Sci-Fi,2016,7.9,116.0,Denis Villeneuve
+1103,Blade Runner 2049,Sci-Fi,2017,8.0,164.0,Denis Villeneuve
+1104,Dune,Sci-Fi,2021,8.0,155.0,Denis Villeneuve
+1105,Oppenheimer,Drama,2023,8.6,180.0,Christopher Nolan
+1106,Everything Everywhere All at Once,Sci-Fi,2022,7.8,139.0,Daniel Kwan
+1107,The Holdovers,Comedy,2023,7.9,133.0,Alexander Payne
+1108,Past Lives,Romance,2023,7.8,106.0,Celine Song
+1109,Barbie,Comedy,2023,6.8,114.0,Greta Gerwig
+1110,Top Gun: Maverick,Action,2022,8.2,,Joseph Kosinski
+1111,Knives Out,Mystery,2019,7.9,130.0,Rian Johnson
+1112,Logan,Action,2017,8.1,137.0,James Mangold
+1113,Her,Romance,2013,8.0,126.0,Spike Jonze
+1114,The Revenant,Adventure,2015,8.0,156.0,Alejandro G. Iñárritu
+1010,Fight Club,Drama,1999,8.8,139.0,David Fincher
+1121,Moonfall,Sci-Fi,2022,5.2,130.0,Roland Emmerich
+1122,The Last Airbender,Fantasy,2010,4.0,103.0,M. Night Shyamalan
+1123,Movie Night,Comedy,1997,6.1,101.0,Alex Carter
+1124,City Lights,Comedy,1931,8.5,87.0,Charlie Chaplin
+1125,The Fugitive,Thriller,1993,7.8,130.0,Andrew Davis
